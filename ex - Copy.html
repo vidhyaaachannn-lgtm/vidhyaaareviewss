@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <style>
+        .nav{
+            display: flex;
+            list-style-type: none;
+            background-color: aqua;
+            padding: 30px;
+            border: 2px solid brown;
+ 
+        }
+        .nav a{
+            padding: 30px;
+            text-decoration: none;
+            color: black;
+        }
+        .dropdown{
+            position: absolute;
+            background-color: rgb(172, 204, 228);
+            list-style-type: none;
+            width: 160px;
+            visibility: hidden;
+            box-shadow:  -2px 2px 81px -27px rgba(0, 0, 0, 0.3);
+            padding: 0;
+            
+
+
+        }
+        .dropdown a{
+            color: red;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            box-sizing: border-box;
+        }
+        .dropdown a:hover{
+            color: black;
+            background-color: aqua;
+        }
+        .sub:hover> .dropdown{
+            visibility: visible;
+        }
+        .subb{
+            left: 160px;
+            top: 0px;
+
+        }
+        .navsub{
+            display: flex;
+            list-style-type: none;
+            padding: 50px;
+ 
+        }
+        .navsub a{
+            padding: 30px;
+            text-decoration: none;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 50px;
+        }
+        .footer{
+            padding: 50px;
+            background-color: aquamarine;
+
+        }
+        .footer a{
+            padding: 30px;
+        }
+        .des{
+            background-color: blue;
+            padding: 40px;
+
+        }
+        .fa-house {
+            padding: 10px;
+            background-color: rgb(248, 239, 239);
+            font-size: 40px;
+             margin-left: 50px;
+        }
+        .fa-instagram {
+             padding: 10px;
+            background-color: rgb(248, 239, 239);
+            font-size: 40px;
+            margin-left: 50px;
+            
+        }
+        .fa-linkedin{
+             padding: 10px;
+            background-color: rgb(248, 239, 239);
+            font-size: 40px;
+             margin-left: 50px;
+        }
+        .fa-phone{
+             padding: 10px;
+            background-color: rgb(248, 239, 239);
+            font-size: 40px;
+             margin-left: 50px;
+        }
+        .icon{
+            display: flex;
+            padding: 50px;
+            gap: 80px;
+        }
+
+
+
+    </style>
+    <body>
+        
+       <ul class="nav">
+        <li class="sub"><a href="#">HOME</a>
+        <ul class="dropdown">
+            <li class="sub"><a href="#">HOME 1</a>
+                <ul class="dropdown subb">
+                    <li><a href="#">water</a></li>
+                    <li><a href="#">water 1</a></li>
+                </ul>
+            <li><a href="#">HOME 2</a>
+            <li><a href="#">HOME 3</a>
+
+        </ul></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">CATRGORIES</a></li>
+        <li><a href="#">ABOUT US</a></li>
+       </ul>
+       <footer class="des">
+        <div class="icon">
+        <i class="fa-solid fa-house"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-solid fa-phone"></i>
+        </div>
+        <ul class="navsub">
+            <li><a href="#"></a>HOME</li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">VISUALS</a></li>
+             
+        </ul>
+        <p style="text-align: center;"> LOGO CREDITS: VIDHYA<br>
+             DEVELOPED AND HOSTED BY 8 QUEENS </p>
+        </div>
+       </footer>
+
+    </body>
+</html>
